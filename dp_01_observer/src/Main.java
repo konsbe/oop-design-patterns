@@ -26,12 +26,12 @@ public class Main {
         secondObserver.update();
         thirdObserver.update();
 
-        //Provide/ Subject ( broadcaster )
-        topic.postMessage("Hello Subscribers");
+        //Provider/ Subject ( broadcaster )
+        topic.postMessage("Hello Subscribers" ,firstObserver);
 
         //Unregister Observer
         topic.unregister(firstObserver);
 
-        topic.postMessage("Hello to All Subscribers");
+        topic.postMessage("Hello to All Subscribers",secondObserver);
     }
 }

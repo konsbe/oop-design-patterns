@@ -20,6 +20,11 @@ public class EmailTopicSubscriber implements Observer {
     }
 
     @Override
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
     public void setSubject(Subject subject) {
         this.topic=subject;
     }

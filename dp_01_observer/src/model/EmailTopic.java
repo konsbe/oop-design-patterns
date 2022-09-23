@@ -25,17 +25,19 @@ public class EmailTopic implements Subject {
     }
 
     @Override
-    public void notifyObservers() {
-        for(Observer observer: observers) observer.update();
+    public void notifyObservers(Observer obs) {
+        for(Observer observer: observers) if (observer != obs) {
+            observer.update();
+        };
     }
 
     @Override
     public Object getUpdate(Observer observer) {
         return this.message;
     }
-    public void postMessage(String msg){
-        System.out.println("message posted to my topic "+msg);
+    public void postMessage(String msg, Observer obs){
+        System.out.println("message posted to my topic "+msg+" From: "+ obs.getName());
         this.message =msg;
-        notifyObservers();
+        notifyObservers(obs);
     }
 }
