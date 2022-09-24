@@ -24,6 +24,11 @@
 ```
 
 `npm start` running src file <br/>
-`npm run watch` compiling src/index.ts -> dist/index.js and waiting to recompile <br/>
+`npm run watch` compiling src/index.ts -> dist/index.js and waiting for changes recompile <br/>
 `npm run complete` running dist with node <br/>
 `npm run dev` waiting changes and rerun index.js <br/>
+
+#### how to run it!
+
+`npm run watch` on one terminal and<br/>
+`npm run dev` on another
