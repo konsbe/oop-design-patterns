@@ -1,0 +1,1 @@
+{"version":3,"file":"cpu.js","sourceRoot":"","sources":["../../src/models/cpu.ts"],"names":[],"mappings":";;AAAA,MAAqB,GAAG;IACf,MAAM;QACX,OAAO,CAAC,GAAG,CAAC,aAAa,CAAC,CAAC;IAC7B,CAAC;IACM,IAAI;QACT,OAAO,CAAC,GAAG,CAAC,eAAe,CAAC,CAAC;IAC/B,CAAC;IACM,OAAO;QACZ,OAAO,CAAC,GAAG,CAAC,cAAc,CAAC,CAAC;IAC9B,CAAC;CACF;AAVD,sBAUC"}
