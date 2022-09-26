@@ -12,7 +12,7 @@ export default class ModelTwo extends Template {
     console.log("adding new sub model two now!");
   }
   public subModelWants(): boolean {
-    // this.answer = this.getUserInput();
+    this.answer = this.getUserInput();
     // return this.getUserInput() ? true : false;
     return true;
   }
@@ -27,12 +27,12 @@ export default class ModelTwo extends Template {
     console.log("ModelOne ending...");
   }
 
-  // private getUserInput = (): boolean => {
-  //   rl.question("Is this example useful? [y/n] ", (string) => {
-  //     this.answer = string.toLowerCase() === "y" ? true : false;
-  //     // close input stream
-  //     rl.close();
-  //   });
-  //   return this.answer;
-  // };
+  private getUserInput = (): boolean => {
+    this.answer = true;
+    // rl.question("Is this example useful? [y/n] ", (string: string) => {
+    // this.answer = string.toLowerCase() === "y" ? true : false;
+    // close input stream
+    // rl.close();
+    return this.answer;
+  };
 }

@@ -7,7 +7,7 @@ export default class ModelOne extends Template {
     this.name = n;
   }
   protected addNewSubModelNow(): void {
-    console.log("makingg model now! ");
+    console.log("making sub model 1 now! ");
   }
   initialize(): void {
     console.log("ModelOne initializing...");

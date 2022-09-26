@@ -1,6 +1,6 @@
-// import ITemplate from "./ITemplate";
+import ITemplate from "./ITemplate";
 
-export default abstract class Template {
+export default abstract class Template implements ITemplate {
   abstract initialize(): void;
   abstract startPlay(): void;
   abstract endPlay(): void;
